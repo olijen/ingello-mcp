@@ -1,0 +1,40 @@
+{
+  "name": "ingello-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for Ingello Systems: ask about custom CRM/ERP/WMS/SaaS development and submit a project request on behalf of a user.",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "ingello-mcp": "src/index.mjs"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "ingello",
+    "crm",
+    "erp",
+    "wms",
+    "software-development",
+    "agency"
+  ],
+  "homepage": "https://systems.ingello.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olijen/ingello-mcp"
+  },
+  "scripts": {
+    "start": "node init && node src/index.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "zod": "^3.25.0"
+  },
+  "engines": {
+    "node": ">=20.19"
+  }
+}
